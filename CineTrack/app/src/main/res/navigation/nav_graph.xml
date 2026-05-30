@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.medianet.cinetrack.ui.home.HomeFragment"
+        android:label="Accueil"/>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.medianet.cinetrack.ui.detail.DetailFragment"
+        android:label="Détail"/>
+
+    <argument
+        android:name="movieId"
+        app:argType="string"/>
+
+    <!-- Action depuis Home -->
+    <action
+        android:id="@+id/action_home_to_detail"
+        app:destination="@id/detailFragment"/>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.medianet.cinetrack.ui.profile.ProfileFragment"
+        android:label="Profil"/>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.medianet.cinetrack.ui.about.AboutFragment"
+        android:label="À propos"/>
+
+    <fragment
+        android:id="@+id/movieListFragment"
+        android:name="com.medianet.cinetrack.ui.movies.MovieListFragment"
+        android:label="Films">
+
+        <action
+            android:id="@+id/action_movieList_to_detail"
+            app:destination="@id/detailFragment"/>
+    </fragment>
+
+    <action
+        android:id="@+id/action_home_to_movieList"
+        app:destination="@id/movieListFragment"/>
+
+    <!-- TV Shows -->
+    <fragment
+        android:id="@+id/tvShowListFragment"
+        android:name="com.medianet.cinetrack.ui.tvshows.TvShowListFragment"
+        android:label="Séries TV">
+
+        <action
+            android:id="@+id/action_tvShowList_to_tvShowDetail"
+            app:destination="@id/tvShowDetailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/tvShowDetailFragment"
+        android:name="com.medianet.cinetrack.ui.tvshows.TvShowDetailFragment"
+        android:label="Détail Série">
+
+        <argument
+            android:name="tvShowId"
+            app:argType="string"/>
+    </fragment>
+
+    <action
+        android:id="@+id/action_home_to_tvShowList"
+        app:destination="@id/tvShowListFragment"/>
+
+    <action
+        android:id="@+id/action_home_to_tvShowDetail"
+        app:destination="@id/tvShowDetailFragment"/>
+
+    <fragment
+        android:id="@+id/watchlistFragment"
+        android:name="com.medianet.cinetrack.ui.watchlist.WatchlistFragment"
+        android:label="Ma Liste">
+
+        <action
+            android:id="@+id/action_watchlist_to_detail"
+            app:destination="@id/detailFragment"/>
+
+        <action
+            android:id="@+id/action_watchlist_to_tvShowDetail"
+            app:destination="@id/tvShowDetailFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/geminiChatFragment"
+        android:name="com.medianet.cinetrack.ui.chat.GeminiChatFragment"
+        android:label="CineBot"/>
+
+</navigation>

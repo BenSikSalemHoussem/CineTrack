@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs cat -n)",
+      "Bash(xargs cat)",
+      "Bash(curl -s --max-time 10 https://imdb-top-100-movies.p.rapidapi.com/top1 -H 'X-RapidAPI-Key: 6bd16effc2msh626a36d0ce917edp11252cjsn0e4fb79fef17' -H 'X-RapidAPI-Host: imdb-top-100-movies.p.rapidapi.com')",
+      "Bash(python3 -m json.tool)",
+      "WebFetch(domain:rapidapi.com)",
+      "WebFetch(domain:web.archive.org)",
+      "WebSearch",
+      "Bash(/usr/bin/curl -s --max-time 10 -H 'X-RapidAPI-Key: 6bd16effc2msh626a36d0ce917edp11252cjsn0e4fb79fef17' -H 'X-RapidAPI-Host: imdb236.p.rapidapi.com' https://imdb236.p.rapidapi.com/)",
+      "Bash(/usr/bin/curl -s --max-time 10 -H 'X-RapidAPI-Key: 6bd16effc2msh626a36d0ce917edp11252cjsn0e4fb79fef17' -H 'X-RapidAPI-Host: imdb236.p.rapidapi.com' https://imdb236.p.rapidapi.com/imdb/top250-movies)",
+      "Bash(/usr/bin/curl -s -I --max-time 10 -H 'X-RapidAPI-Key: 6bd16effc2msh626a36d0ce917edp11252cjsn0e4fb79fef17' -H 'X-RapidAPI-Host: imdb236.p.rapidapi.com' https://imdb236.p.rapidapi.com/)",
+      "Bash(/usr/bin/curl -s -X OPTIONS --max-time 10 -H 'X-RapidAPI-Key: 6bd16effc2msh626a36d0ce917edp11252cjsn0e4fb79fef17' -H 'X-RapidAPI-Host: imdb236.p.rapidapi.com' https://imdb236.p.rapidapi.com/)",
+      "Bash(/usr/bin/curl -s --max-time 10 -H 'X-RapidAPI-Key: 6bd16effc2msh626a36d0ce917edp11252cjsn0e4fb79fef17' -H 'X-RapidAPI-Host: imdb-top-100-movies.p.rapidapi.com' https://imdb-top-100-movies.p.rapidapi.com/)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d[0] if isinstance\\(d,list\\) else d, indent=2\\)\\)\")",
+      "WebFetch(domain:www.youtube.com)",
+      "Bash(/usr/bin/curl -v --max-time 10 -H 'X-RapidAPI-Key: 6bd16effc2msh626a36d0ce917edp11252cjsn0e4fb79fef17' -H 'X-RapidAPI-Host: imdb236.p.rapidapi.com' https://imdb236.p.rapidapi.com/imdb/top250-tv-shows)",
+      "Bash(/usr/bin/curl -v --max-time 10 -H 'X-RapidAPI-Key: 6bd16effc2msh626a36d0ce917edp11252cjsn0e4fb79fef17' -H 'X-RapidAPI-Host: imdb236.p.rapidapi.com' https://imdb236.p.rapidapi.com/INTENTIONALLY_WRONG)",
+      "Bash(/usr/bin/curl -s --max-time 10 -H 'X-RapidAPI-Key: 6bd16effc2msh626a36d0ce917edp11252cjsn0e4fb79fef17' -H 'X-RapidAPI-Host: imdb236.p.rapidapi.com' https://imdb236.p.rapidapi.com/ec1b9d5f-bc06-4593-9c6b-98fe3a732aee)",
+      "Bash(/usr/bin/curl -s --max-time 10 -H 'X-RapidAPI-Key: 6bd16effc2msh626a36d0ce917edp11252cjsn0e4fb79fef17' -H 'X-RapidAPI-Host: imdb236.p.rapidapi.com' -H 'Accept: text/html' https://imdb236.p.rapidapi.com/)",
+      "Bash(/usr/bin/curl -s --max-time 10 -H 'X-RapidAPI-Key: 6bd16effc2msh626a36d0ce917edp11252cjsn0e4fb79fef17' -H 'X-RapidAPI-Host: imdb-top-100-movies.p.rapidapi.com' https://imdb-top-100-movies.p.rapidapi.com/top1)",
+      "Bash(python3 -c \"import sys,json; print\\(json.dumps\\(json.load\\(sys.stdin\\), indent=2\\)\\)\")",
+      "Bash(/usr/bin/curl -s --max-time 15 -H 'X-RapidAPI-Key: 6bd16effc2msh626a36d0ce917edp11252cjsn0e4fb79fef17' -H 'X-RapidAPI-Host: imdb236.p.rapidapi.com' https://imdb236.p.rapidapi.com/api/imdb/top250-tv)",
+      "Bash(python3 -c ' *)",
+      "Bash(/usr/bin/curl -s --max-time 10 -H 'X-RapidAPI-Key: 6bd16effc2msh626a36d0ce917edp11252cjsn0e4fb79fef17' -H 'X-RapidAPI-Host: imdb236.p.rapidapi.com' https://imdb236.p.rapidapi.com/api/imdb/tt0903747)",
+      "Bash(xargs ls)"
+    ]
+  }
+}

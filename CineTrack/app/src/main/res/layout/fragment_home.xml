@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <!-- ===== SECTION TRENDING FILMS ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Trending Films"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+
+            <TextView
+                android:id="@+id/textSeeAllMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voir tout"
+                android:textSize="12sp"
+                android:textColor="@color/cyan"
+                android:padding="4dp"/>
+        </LinearLayout>
+
+        <!-- RecyclerView Films -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <!-- Lottie loading films -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieMovies"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            app:lottie_rawRes="@raw/anim_splash"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <!-- Error films -->
+        <TextView
+            android:id="@+id/textErrorMovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/error"
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
+
+        <!-- ===== SECTION TRENDING SÉRIES ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="28dp"
+            android:paddingBottom="12dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Trending Séries"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+
+            <TextView
+                android:id="@+id/textSeeAllSeries"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voir tout"
+                android:textSize="12sp"
+                android:textColor="@color/cyan"
+                android:padding="4dp"/>
+        </LinearLayout>
+
+        <!-- RecyclerView Séries -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerSeries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <!-- Lottie loading séries -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieSeries"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            app:lottie_rawRes="@raw/anim_splash"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
+
+        <!-- Error séries -->
+        <TextView
+            android:id="@+id/textErrorSeries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/error"
+            android:textSize="13sp"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

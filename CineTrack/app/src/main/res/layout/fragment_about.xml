@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="32dp">
+
+        <!-- ===== HEADER ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/bg_card"
+            android:paddingTop="40dp"
+            android:paddingBottom="32dp">
+
+            <!-- Logo CT -->
+            <include
+                layout="@layout/logo_ct"
+                android:layout_width="90dp"
+                android:layout_height="90dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CineTrack"
+                android:textColor="@color/text_primary"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vos films, votre univers."
+                android:textColor="@color/cyan"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Version badge -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 1.0.0"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp"
+                android:background="@drawable/bg_badge_cyan"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginTop="12dp"/>
+
+        </LinearLayout>
+
+        <!-- ===== DESCRIPTION ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="À PROPOS"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_secondary"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CineTrack est une application Android de suivi de films et séries. Découvrez les meilleures œuvres du cinéma, gérez votre watchlist personnelle, notez et commentez vos films favoris, et laissez notre IA vous guider dans vos prochains choix."
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp"
+                android:lineSpacingExtra="5dp"/>
+        </LinearLayout>
+
+        <!-- ===== FONCTIONNALITÉS ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FONCTIONNALITÉS"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_secondary">
+
+            <!-- Feature items -->
+            <include layout="@layout/item_about_feature"
+                android:id="@+id/feature1"/>
+            <View android:layout_width="match_parent" android:layout_height="0.5dp"
+                android:background="@color/border_idle" android:layout_marginStart="52dp"/>
+            <include layout="@layout/item_about_feature"
+                android:id="@+id/feature2"/>
+            <View android:layout_width="match_parent" android:layout_height="0.5dp"
+                android:background="@color/border_idle" android:layout_marginStart="52dp"/>
+            <include layout="@layout/item_about_feature"
+                android:id="@+id/feature3"/>
+            <View android:layout_width="match_parent" android:layout_height="0.5dp"
+                android:background="@color/border_idle" android:layout_marginStart="52dp"/>
+            <include layout="@layout/item_about_feature"
+                android:id="@+id/feature4"/>
+            <View android:layout_width="match_parent" android:layout_height="0.5dp"
+                android:background="@color/border_idle" android:layout_marginStart="52dp"/>
+            <include layout="@layout/item_about_feature"
+                android:id="@+id/feature5"/>
+
+        </LinearLayout>
+
+        <!-- ===== TECHNOLOGIES ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TECHNOLOGIES"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_secondary"
+            android:padding="16dp">
+
+            <!-- Ligne 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Firebase" android:textColor="@color/cyan" android:textSize="12sp"
+                    android:background="@drawable/bg_badge_cyan" android:layout_marginEnd="8dp"
+                    android:paddingStart="10dp" android:paddingEnd="10dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Retrofit" android:textColor="@color/cyan" android:textSize="12sp"
+                    android:background="@drawable/bg_badge_cyan" android:layout_marginEnd="8dp"
+                    android:paddingStart="10dp" android:paddingEnd="10dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Gemini AI" android:textColor="@color/cyan" android:textSize="12sp"
+                    android:background="@drawable/bg_badge_cyan"
+                    android:paddingStart="10dp" android:paddingEnd="10dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"/>
+            </LinearLayout>
+
+            <!-- Ligne 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="IMDB API" android:textColor="@color/cyan" android:textSize="12sp"
+                    android:background="@drawable/bg_badge_cyan" android:layout_marginEnd="8dp"
+                    android:paddingStart="10dp" android:paddingEnd="10dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Lottie" android:textColor="@color/cyan" android:textSize="12sp"
+                    android:background="@drawable/bg_badge_cyan" android:layout_marginEnd="8dp"
+                    android:paddingStart="10dp" android:paddingEnd="10dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Glide" android:textColor="@color/cyan" android:textSize="12sp"
+                    android:background="@drawable/bg_badge_cyan" android:layout_marginEnd="8dp"
+                    android:paddingStart="10dp" android:paddingEnd="10dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="MVVM" android:textColor="@color/cyan" android:textSize="12sp"
+                    android:background="@drawable/bg_badge_cyan"
+                    android:paddingStart="10dp" android:paddingEnd="10dp"
+                    android:paddingTop="6dp" android:paddingBottom="6dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ===== ÉQUIPE ===== -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DÉVELOPPÉ PAR"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp"
+            android:letterSpacing="0.1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/bg_secondary"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textDeveloper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ezer Idoudi,\nYesmine Haba,\nFatma Bouokazine,\nHoussem Ben Sik Salem"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mini-projet Android — 2025/2026"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEK-UP University"
+                android:textColor="@color/cyan"
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+
+        <!-- Copyright -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="© 2026 CineTrack. Tous droits réservés."
+            android:textColor="@color/text_hint"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="black">#FF000000</color>-->
+    <!--<color name="white">#FFFFFFFF</color>-->
+    <color name="primary">#378ADD</color>
+    <color name="primary_dark">#0C447C</color>
+    <color name="background">#FFFFFF</color>
+    <color name="background_secondary">#F5F5F5</color>
+    <!--<color name="text_primary">#1A1A1A</color>-->
+    <!--<color name="text_secondary">#757575</color>-->
+    <!--<color name="error">#E24B4A</color>-->
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="splash_bg">#0C447C</color>  <!-- bleu foncé pour le splash -->
+
+    <!-- Backgrounds -->
+    <color name="bg_primary">#0D1526</color>
+    <color name="bg_secondary">#162038</color>
+    <color name="bg_card">#0D1E3A</color>
+    <color name="bg_field">#162038</color>
+
+    <!-- Accent -->
+    <color name="cyan">#00C2FF</color>
+    <color name="cyan_dark">#0098CC</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#4A7099</color>
+    <color name="text_hint">#2A4A6E</color>
+
+    <!-- Borders -->
+    <color name="border_active">#00C2FF</color>
+    <color name="border_idle">#1E3A5F</color>
+
+    <!-- States -->
+    <color name="error">#FF5252</color>
+    <color name="success">#00C896</color>
+
+    <!-- Misc -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+</resources>
