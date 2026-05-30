@@ -1,7 +1,7 @@
 # CineTrack
 Mini projet android
 
-GLSI-4 SOIR
+4 GLSI-B SOIR
 
 DÉVELOPPÉ PAR:
 - Ezer Idoudi,
